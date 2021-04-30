@@ -36,6 +36,7 @@ def parse_args():
     args = parser.parse_args()
     return args
 
+
 if __name__ == "__main__":
     args = parse_args()
     if args.mode == "genkey":
@@ -46,23 +47,12 @@ if __name__ == "__main__":
         url, payload = decrypt_test()
     else:
         raise ValueError("Wrong mode")
-    
-    # payload = "'" + str(payload) + "'"
-    '''print(payload)
-    
-    headers = {
-    'Content-Type': 'application/json',
-    }
-    r = requests.post(url, headers=headers, data=payload)
-    print(r)'''
 
     headers = {
         'Content-Type': 'application/json',
     }
 
-    data = {"userName":"BB"}
-    data = json.dumps(data)
-    print(data)
+    data = json.dumps(payload)
 
     response = requests.post('http://localhost:5000/genkey', headers=headers, data=data)
 
