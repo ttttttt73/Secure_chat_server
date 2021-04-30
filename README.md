@@ -1,3 +1,7 @@
+# Installation
+pip install -r requirements.txt  
+
+
 # Curl command example
 genkey
 encrypt
