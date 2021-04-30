@@ -1,16 +1,16 @@
 # Installation
-pip install -r requirements.txt  
+pip install -r requirements.txt<br>
 
 
 # Curl command example
-genkey
-encrypt
-decrypt
+genkey<br>
+encrypt<br>
+decrypt<br>
 
 
 # Getting started
-flask run  
-python test_request.py genkey  
-python test_request.py encrypt  
-python test_request.py decrypt  
+flask run<br>
+python test_request.py genkey<br>
+python test_request.py encrypt<br>
+python test_request.py decrypt<br>
 
